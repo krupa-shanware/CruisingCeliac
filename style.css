@@ -1,0 +1,205 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* STYLE SECTIONING TAGS */
+body {
+ background-color: #F2FFF0; 
+ font-family: "Georgia", sans-serif;
+
+}
+
+/* STYLE TEXT */
+
+h1 {
+  text-align:center;
+  font-family: "Georgia", sans-serif;
+  text-decoration: #B8C8BF wavy underline;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+main {
+  /*background-color: white;*/
+}
+
+p {
+  line-height: 1.5;
+}
+
+.centerSpaceText {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.heading {
+  color: black;
+  background-color: #F2FFF0;
+}
+
+main{
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 20%;
+  margin-right: 20%;
+  
+}
+
+/*introduction on the main Cruising Celiac page*/
+.intro {
+  background-color: #D9E5DF;
+  text-align:center;
+  padding-bottom: 5%;
+}
+
+/*makes smaller titles bolded so they stand out*/
+.smalltitle {
+  font-weight: bold;
+}
+
+/* STYLE IMAGES */
+img {
+  max-width: 100%;
+}
+
+/*overlay of "Cruising Celiac" over an image*/
+.mainpage img {
+  position: relative;
+  width: 100%;
+}
+
+.mainpage .overlay {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+  top: 50%;
+  left: 50%;
+  /*padding-top: 50%;*/
+  transform: translate(-50%, -50%);
+}
+
+/*allows image and text to be next to each other*/
+.section {
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+}
+
+#sectioninfo {
+  display: flex;
+  flex-direction: column;
+}
+
+#sectionpic {
+  width: 35%;
+  height: 35%;
+  margin-right: 3%;
+}
+
+/*centers image and text*/
+.aboutKrupa {
+  text-align: center;
+}
+
+/*about page mission list formatting*/
+.missionList {
+  padding-top: 15px;
+  background-color: #DDDDDD;
+}
+
+.missionList ul{
+  list-style-type: circle;
+  list-style-position:inside;
+}
+
+/*article links*/
+.article {
+  background-color: none;
+  color: black;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+/*link hover*/
+a:hover {
+  color: darkolivegreen;
+}
+
+/*about page section for general*/
+.generalInfo {
+  padding-bottom: 20px;
+  /*background-color: #DDDDDD;*/
+  line-height: 1.5;
+}
+
+/*small headers on about page*/
+.sectionHead {
+  padding-bottom: 10px;
+}
+
+h3 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+h4 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+
+/* STYLE NAV BAR */
+nav {
+  background-color: #DDDDDD;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.navBar li {
+  display: inline;
+}
+
+li {
+  line-height: 1.5;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  padding: 1em;
+}
+
+li a:hover {
+  background-color: #ededed;
+}
+
+
+/*CHANGE CSS BASED ON SCREEN SIZE*/
+/*Breakpoint 1*/
+@media screen and (max-width: 850px) {
+  .section {
+    flex-wrap: wrap;
+  }
+
+}
+
+/*Style footer*/
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #DDDDDD;
+}
